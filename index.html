@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<title>Cakes</title>
+</head>
+
+<body class="page">
+	<header class="header page__header">
+		<h1 class="logo header__logo">Cakes</h1>
+		<div class="header__burger burger">
+			<div class="burger__layer layer1"></div>
+			<div class="burger__layer layer2"></div>
+			<div class="burger__layer layer3"></div>
+		</div>
+		<nav class="main-menu header__menu">
+			<h2 class="main-menu__title title_sr-only">Главное меню</h2>
+			<ul class="main-menu__list">
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">Наши торты</a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">Индивидуальный заказ</a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">Отзывы</a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">О нас</a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">Как заказать</a>
+				</li>
+				<li class="main-menu__item">
+					<a href="#" class="main-menu__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__tel">+7 123 456 78 91</div>
+	</header>
+
+	<main class="main">
+		<section class="banner main__banner section">
+			<h2 class="banner__title section__title">Торты на заказ</h2>
+			<div class="banner__subtitle section__subtitle">Ручная работа</div>
+			<ul class="banner__list">
+				<li class="banner__item">
+					<span class="banner__icon icon icon-natural-ban"></span>
+					<span class="banner__text">Натуральные ингредиенты</span>
+				</li>
+				<li class="banner__item">
+					<span class="banner__icon icon icon-delivery"></span>
+					<span class="banner__text">Доставка бесплатно при заказе от 2000 рублей
+						<sup>*</sup>
+					</span>
+				</li>
+			</ul>
+			<button class="banner__btn btn">Выбрать торт</button>
+		</section>
+		<section class="main__catalog catalog section">
+			<h2 class="catalog__title section__title">Наши торты</h2>
+			<ul class="catalog__list">
+				<li class="catalog__item catalog__item-1">
+					<a href="#" class="catalog__card card card_classic">
+						<h3 class="card__title">Классические</h3>
+						<span class="card__quantity">24 вида</span>
+
+						<span class="card__link" title="Перейти">Смотреть 
+							<span class="card__arrow"></span>
+						</span>
+					</a>
+				</li>
+
+				<li class="catalog__item catalog__item-2">
+					<a href="#" class="catalog__card card card_mousse">
+						<h3 class="card__title">Муссовые</h3>
+						<span class="card__quantity">12 видов</span>
+						<!-- <img src="" alt="" class="card__img"> -->
+						<span class="card__link" title="Перейти"><span class="card__arrow"></span></span>
+
+					</a>
+				</li>
+				<li class="catalog__item catalog__item-3">
+					<a href="#" class="catalog__card card card_wedding">
+						<h3 class="card__title">Свадебные</h3>
+						<span class="card__quantity">20 видов</span>
+						<!-- <img src="" alt="" class="card__img"> -->
+						<span class="card__link" title="Перейти"><span class="card__arrow"></span></span>
+
+					</a>
+
+				</li>
+				<li class="catalog__item catalog__item-4">
+					<a href="#" class="catalog__card card card_men">
+						<h3 class="card__title">Мужчинам</h3>
+						<span class="card__quantity">12 видов</span>
+						<!-- <img src="" alt="" class="card__img"> -->
+						<span class="card__link" title="Перейти"><span class="card__arrow"></span></span>
+
+					</a>
+				</li>
+				<li class="catalog__item catalog__item-5">
+					<a href="#" class="catalog__card card card_women">
+						<h3 class="card__title">Женщинам</h3>
+						<span class="card__quantity">16 видов</span>
+						<!-- <img src="" alt="" class="card__img"> -->
+						<span class="card__link" title="Перейти"><span class="card__arrow"></span></span>
+
+					</a>
+				</li>
+				<li class="catalog__item catalog__item-6">
+					<a href="#" class="catalog__card card card_kids">
+						<h3 class="card__title">Детские</h3>
+						<span class="card__quantity">18 видов</span>
+						<!-- <img src="" alt="" class="card__img"> -->
+						<span class="card__link" title="Перейти"><span class="card__arrow"></span></span>
+
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="personal-order section">
+			<h2 class="personal-order__title section__title">Индивидуальный заказ</h2>
+			<div class="personal-order__subtitle section__subtitle">Соберите торт в 3 шага</div>
+			<section class="personal-order__step">
+				<h3 class="personal-order__step-title">
+					<span class="personal-order__number">01</span>Выберите начинку</h3>
+				<section class="filling-slider">
+					<button class="filling-slider__prev slider-btn slider-btn-prev" title="Назад"></button>
+					<ul class="filling-slider__list">
+						<li class="filling-slider__item filling">
+							<div class="filling__img-container">
+								<picture>
+									<source media="(max-width: 400px)" srcset="img/filling-gannash-sm.png">
+									<source media="(max-width: 700px)" srcset="img/filling-gannash-sm-plus.png">
+									<source media="(max-width: 1280px)" srcset="img/filling-gannash-md.png">
+									<img class="filling__img" src="img/filling-gannash-lg.png" alt="Шоколадный торт с начинкой">
+								</picture>
+								<div class="filling__counter filling__counter_mobile">1/12</div>
+							</div>
+							<div class="filling-slider__points slider-points">
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+
+							</div>
+							<div class="filling__text-container">
+								<h4 class="filling__title">Шоколадный ганаш</h4>
+								<p class="filling__description">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех
+									возможных десертов!</p>
+								<div class="filling__price">1000 руб/кг</div>
+								<div class="filling__counter filling__counter_desktop">1/12</div>
+								<button class="filling__btn personal-order__btn btn">Выбрать</button>
+							</div>
+						</li>
+					</ul>
+					<button class="filling-slider__next slider-btn slider-btn-next" title="Вперед"></button>
+				</section>
+			</section>
+			<section class="personal-order__step personal-order__size">
+				<h3 class="personal-order__step-title personal-order__size-title">
+					<span class="personal-order__number">02</span>Размер</h3>
+				<div class="size-slider">
+					<ul class="size-slider__list">
+						<li class="size-slider__item size size-1kg">
+							<div class="size__img size-1kg__img">1 кг</div>
+							<div class="size-slider__points slider-points">
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+							</div>
+							<h4 class="size__title">17-18 см</h4>
+							<p class="size__description">(1кг - 6 персон)</p>
+							<button class="size__btn personal-order__btn btn">Выбрать</button>
+						</li>
+						<li class="size-slider__item size size-2kg">
+							<div class="size__img size-2kg__img">2 кг</div>
+							<div class="size-slider__points slider-points">
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+							</div>
+							<h4 class="size__title">23-24 см</h4>
+							<p class="size__description">(10-12 персон)</p>
+							<button class="size__btn personal-order__btn btn">Выбрать</button>
+						</li>
+						<li class="size-slider__item size size-5kg">
+							<div class="size__img size-5kg__img">5 кг</div>
+							<div class="size-slider__points slider-points">
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+							</div>
+							<h4 class="size__title">Два яруса 25 и 20 см</h4>
+							<p class="size__description">(15-20 персон)</p>
+							<button class="size__btn personal-order__btn btn">Выбрать</button>
+						</li>
+						<li class="size-slider__item size size-8kg">
+							<div class="size__img size-8kg__img">8 кг</div>
+							<div class="size-slider__points slider-points">
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+							</div>
+							<h4 class="size__title">Три яруса 30, 25 и 18 см</h4>
+							<p class="size__description">(25-30 персон)</p>
+							<button class="size__btn personal-order__btn btn">Выбрать</button>
+						</li>
+					</ul>
+				</div>
+
+			</section>
+			<section class="personal-order__step personal-order__decor">
+				<h3 class="personal-order__step-title personal-order__decor-title">
+					<span class="personal-order__number">03</span>Оформление</h3>
+				<section class="decor-slider">
+					<button class="decor-slider__prev slider-btn slider-btn-prev" title="Назад"></button>
+					<ul class="decor-slider__list">
+						<li class="decor-slider__item decor decor_hidden">
+							<div class="decor__img-container">
+								<picture>
+									<source media="(max-width: 830px)" srcset="img/decor-fruits-md.png">
+									<img src="img/decor-fruits-lg.png" alt="Торт с украшением из маршмэллоу" class="decor__img">
+								</picture>
+								<div class="decor__counter decor__counter_mobile">1/12</div>
+							</div>
+							<div class="decor-slider__points slider-points">
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+							</div>
+							<h4 class="decor__title">Ягодное ассорти</h4>
+							<div class="decor__price">700 руб/кг</div>
+							<button class="decor__btn btn">Выбрать</button>
+						</li>
+						<li class="decor-slider__item decor">
+							<div class="decor__img-container">
+								<picture>
+									<source media="(max-width: 400px)" srcset="img/decor-marsh-sm.png">
+									<source media="(max-width: 830px)" srcset="img/decor-marsh-md.png">
+									<img src="img/decor-marsh-lg.png" alt="Торт с украшением из фруктов" class="decor__img">
+								</picture>
+
+								<div class="decor__counter decor__counter_mobile">1/12</div>
+							</div>
+							<div class="decor-slider__points slider-points">
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+								<span class="slider-points__point"></span>
+							</div>
+							<h4 class="decor__title">Маршмэллоу</h4>
+							<div class="decor__price">600 руб/кг</div>
+							<button class="decor__btn personal-order__btn btn">Выбрать</button>
+						</li>
+					</ul>
+					<div class="decor__counter decor__counter_desktop">2/12</div>
+					<button class="decor-slider__next slider-btn slider-btn-next" title="Вперед"></button>
+
+				</section>
+
+			</section>
+			<section class="personal-order__choice choice section">
+				<h3 class="choice__title section__title">Ваш выбор</h3>
+				<form action="" class="choice__form">
+					<section class="choice__section  choice__filling">
+						<label for="choice-filling" class="choice__subtitle">Начинка</label>
+						<input aria-label="Начинка" id="choice-filling" type="text" class="choice__input" />
+					</section>
+					<section class="choice__section  choice__size">
+						<label for="choice-size" class="choice__subtitle">Размер</label>
+						<input aria-label="Размер" id="choice-size" type="text" class="choice__input" />
+					</section>
+					<section class="choice__section  choice__decor">
+						<label for="choice-decor" class="choice__subtitle">Оформление</label>
+						<input aria-label="Оформление" id="choice-decor" type="text" class="choice__input">
+					</section>
+					<input type="submit" class="choice__btn btn" value="Заказать торт" />
+				</form>
+			</section>
+		</section>
+
+		<section class="main__reviews reviews section">
+			<h2 class="reviews__title section__title">Отзывы</h2>
+			<div class="reviews-slider">
+				<button class="reviews-slider__prev slider-btn slider-btn-prev" title="Назад"></button>
+				<ul class="reviews-slider__list">
+					<li class="reviews-slider__item">
+						<picture class="reviews-slider__img-container">
+							<source media="(max-width: 400px)" srcset="img/reviews-user-photo-sm.png">
+							<source media="(max-width: 1024px)" srcset="img/reviews-user-photo-md.png">
+							<img src="img/reviews-user-photo-lg.png" alt="Фото женщины" class="reviews-slider__user-photo">
+						</picture>
+
+						<div class="reviews-slider__text-container">
+							<h3 class="reviews-slider__user-name">Мария</h3>
+							<div class="reviews-slider__user-info">юрист, 33 года</div>
+							<span class="reviews-slider__review">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное
+								спасибо за своевременную доставку! Теперь
+								будем заказывать торты только у вас для наших семейных праздников:)</span>
+
+							<button class="reviews-slider__unfold-btn">Развернуть</button>
+						</div>
+						<div class="reviews-slider__counter">1/12</div>
+						<div class="reviews-slider__points slider-points">
+							<span class="slider-points__point"></span>
+							<span class="slider-points__point"></span>
+							<span class="slider-points__point"></span>
+							<span class="slider-points__point"></span>
+							<span class="slider-points__point"></span>
+						</div>
+					</li>
+				</ul>
+				<button class="reviews-slider__next slider-btn  slider-btn-next" title="Вперед"></button>
+
+
+			</div>
+		</section>
+		<section class="about-us section">
+			<h2 class="about-us__title section__title">О нас</h2>
+			<picture class="about-us__img-container">
+				<source media="(max-width: 550px)" srcset="img/about-baker-sm.png">
+				<source media="(max-width: 1280px)" srcset="img/about-baker-md.png">
+				<img src="img/about-baker-lg.png" alt="Фото кондитера" class="about-us__img">
+			</picture>
+
+			<div class="about-us__soc-icons soc-icons">
+				<ul class="soc-icons__list">
+					<li class="soc-icons__item about-us__icon">
+						<a href="#" class="soc-icons__link about-us__inst" title="instagram"></a>
+					</li>
+					<li class="soc-icons__item about-us__icon">
+						<a href="#" class="soc-icons__link about-us__vk" title="VK"></a>
+					</li>
+					<li class="soc-icons__item about-us__icon">
+						<a href="#" class="soc-icons__link about-us__tw" title="Twitter"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="about-us__info">
+				<h3 class="about-us__subtitle section__subtitle">О кондитере</h3>
+				<ul class="about-us__list">
+					<li class="about-us__item">
+						<h4 class="about-us__subtitle-2">Кондитер - как призвание</h4>
+						<p class="about-us__text">
+							Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило
+							кондитерское искусство.
+							<br> С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.
+						</p>
+					</li>
+					<li class="about-us__item">
+						<h4 class="about-us__subtitle-2">Принцип - натуральные игредиенты</h4>
+						<p class="about-us__text">
+							Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для
+							торжества, а главным
+							принципом является выбор натуральных ингредиентов.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="quote section">
+			<h2 class="quote__title title_sr-only">Цитата кондитера</h2>
+			<blockquote class="quote__text">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты
+				превращаются в божественное блюдо.</blockquote>
+
+		</section>
+		<section class="features-care">
+			<section class="features section">
+				<h2 class="features__title section_title">Наши преимущества</h2>
+				<h3 class="features__subtitle section__subtitle">Почему нас выбирают?</h3>
+				<ul class="features__list">
+					<li class="features__item">
+						<div class="features__icon-container">
+							<span class="features__icon icon icon-natural-features"></span>
+						</div>
+						<div class="features__content">
+							<h4 class="features__subtitle-2">Без искусственных добавок</h4>
+							<p class="features__text">
+								Работаем с натуральными ингредиентами и свежими продуктами
+							</p>
+						</div>
+					</li>
+					<li class="features__item">
+
+						<div class="features__icon-container">
+							<span class="features__icon icon icon-fresh"></span>
+						</div>
+						<div class="features__content">
+							<h4 class="features__subtitle-2">Свежий торт в день торжества</h4>
+							<p class="features__text">
+								Торты изготавливаются в течение суток до отправки
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="care section">
+				<h2 class="care__title section__title">Забота о клиентах</h2>
+				<div class="care__subtitle section__subtitle">Для нас важно</div>
+				<p class="care__text">
+					Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас
+					и для вашего
+					события.
+				</p>
+			</section>
+		</section>
+
+		<section class="make-order section">
+			<h2 class="make-order__title section__title">Как заказать</h2>
+			<ol class="make-order__list">
+				<li class="make-order__item make-order__item-1">
+					<h3 class="make-order__subtitle">Срок заказа</h3>
+					<p class="make-order__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за
+						неделю.</p>
+				</li>
+				<li class="make-order__item make-order__item-2">
+					<h3 class="make-order__subtitle">Доставка по городу</h3>
+					<p class="make-order__text">
+						Доставка в пределах города 200 рублей , при заказе на сумму более 2000 доставка бесплатно.</p>
+				</li>
+				<li class="make-order__item make-order__item-3">
+					<h3 class="make-order__subtitle">Доставка за городом</h3>
+					<p class="make-order__text">Доставка за пределами города рассчитывается индивидуально.</p>
+				</li>
+			</ol>
+		</section>
+		<section class="contacts section">
+
+			<h2 class="contacts__title section__title">Контакты</h2>
+			<div class="contacts__subtitle section__subtitle">Остались вопросы?</div>
+			<div class="contacts__col-1">
+				<p class="contacts__text">
+					Заполните форму ниже и наш кондитер свяжется с Вами
+				</p>
+				<form action="post" class="contacts__send-message send-message">
+					<input aria-label="Ваше имя" placeholder="Ваше имя" type="text" name="name" class="send-message__input">
+					<input aria-label="Email адрес" placeholder="Email адрес" type="text" name="Email" class="send-message__input">
+					<textarea rows="1" aria-label="Ваш вопрос" placeholder="Ваш вопрос" name="text" class="send-message__textarea"></textarea>
+					<input type="submit" value="Отправить" class="send-message__btn btn">
+				</form>
+			</div>
+			<div class="contacts__col-2">
+				<p class="contacts__text">
+					Или позвоните по телефону:
+					<br> +7 123 456 78 91
+				</p>
+				<p class="contacts__text">
+					Наша почта: bakerypavel@mail.ru
+				</p>
+				<p class="contacts__text">
+					Мы в соц.сетях:
+				</p>
+				<div class="contacts__soc-icons soc-icons">
+					<ul class="soc-icons__list">
+						<li class="soc-icons__item contacts__icon">
+							<a href="#" class="soc-icons__link contacts__inst" title="Мы в instagram"></a>
+						</li>
+						<li class="soc-icons__item  contacts__icon">
+							<a href="#" class="soc-icons__link contacts__vk" title="Мы в VK"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="page__footer footer">
+
+		<div class="footer__top">
+			<div class="logo footer__logo">Cakes</div>
+			<nav class="menu footer__menu">
+				<h2 class="menu__title title_sr-only">Меню</h2>
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Наши торты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Индивидуальный заказ</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Отзывы</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">О нас</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Как заказать</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+					<li class="menu__item menu__tel">+7 123 456 78 91</li>
+				</ul>
+			</nav>
+
+			<div class="footer__soc-icons footer__soc-icons_lg soc-icons">
+				<ul class="soc-icons__list">
+					<li class="soc-icons__item footer__icon">
+						<a href="#" class="soc-icons__link footer__inst" title="Мы в instagram"></a>
+					</li>
+					<li class="soc-icons__item footer__icon">
+						<a href="#" class="soc-icons__link footer__vk" title="Мы в VK"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<hr class="footer__hr hr">
+		<div class="footer__copyright copyright">
+			<span class="copyright__sign">&copy;</span>
+			<span class="copyright__text">2018 Cakes</span>
+		</div>
+		<div class="footer__soc-icons soc-icons footer__soc-icons_sm">
+			<ul class="soc-icons__list">
+				<li class="soc-icons__item footer__icon">
+					<a href="#" class="soc-icons__link footer__inst" title="Мы в instagram"></a>
+				</li>
+				<li class="soc-icons__item footer__icon">
+					<a href="#" class="soc-icons__link footer__vk" title="Мы в VK"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

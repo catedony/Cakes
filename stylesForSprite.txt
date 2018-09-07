@@ -1,0 +1,41 @@
+<span class="sprite icon_footer_vk_hover_md_png"></span>
+<span class="sprite icon_footer_inst_hover_md_png"></span>
+<span class="sprite icon_features_fresh_md_png"></span>
+<span class="sprite icon_feature_natural_md_png"></span>
+<span class="sprite icon_delivery_md_png"></span>
+<span class="sprite icon_natural_md_png"></span>
+
+<span class="sprite icon_contacts_inst_s_png"></span>
+<span class="sprite icon_contacts_vk_s_png"></span>
+<span class="sprite icon_delivery_s_png"></span>
+<span class="sprite icon_feature_natural_s_png"></span>
+<span class="sprite icon_features_fresh_s_png"></span>
+<span class="sprite icon_footer_inst_s_png"></span>
+<span class="sprite icon_footer_vk_s_png"></span>
+<span class="sprite icon_inst_s_png"></span>
+<span class="sprite icon_natural_s_png"></span>
+<span class="sprite icon_tw_s_png"></span>
+<span class="sprite icon_vk_s_png"></span>
+
+.sprite {display: inline-block; vertical-align: middle;}
+.sprite {background-image: url(sprites/9ac4296f2112ed9eb2f001c72cb4dbe0.png); background-position: left center; background-repeat: no-repeat;}
+.sprite.icon_footer_vk_hover_md_png {background-position: 0 0; width: 31px; height: 19px;}
+.sprite.icon_footer_inst_hover_md_png {background-position: 0 -23px; width: 23px; height: 23px;}
+.sprite.icon_features_fresh_md_png {background-position: 0 -50px; width: 63px; height: 38px;}
+.sprite.icon_feature_natural_md_png {background-position: 0 -92px; width: 48px; height: 48px;}
+.sprite.icon_delivery_md_png {background-position: 0 -144px; width: 55px; height: 55px;}
+.sprite.icon_natural_md_png {background-position: 0 -203px; width: 55px; height: 55px;}
+
+.sprite {display: inline-block; vertical-align: middle;}
+.sprite {background-image: url(sprites/79efb372c33b030c9b9864c89fef01ca.png); background-position: left center; background-repeat: no-repeat;}
+.sprite.icon_contacts_inst_s_png {background-position: 0 0; width: 63px; height: 63px;}
+.sprite.icon_contacts_vk_s_png {background-position: 0 -67px; width: 63px; height: 63px;}
+.sprite.icon_delivery_s_png {background-position: 0 -134px; width: 33px; height: 32px;}
+.sprite.icon_feature_natural_s_png {background-position: 0 -170px; width: 61px; height: 61px;}
+.sprite.icon_features_fresh_s_png {background-position: 0 -235px; width: 84px; height: 50px;}
+.sprite.icon_footer_inst_s_png {background-position: 0 -289px; width: 23px; height: 23px;}
+.sprite.icon_footer_vk_s_png {background-position: 0 -316px; width: 31px; height: 19px;}
+.sprite.icon_inst_s_png {background-position: 0 -339px; width: 36px; height: 36px;}
+.sprite.icon_natural_s_png {background-position: 0 -379px; width: 33px; height: 33px;}
+.sprite.icon_tw_s_png {background-position: 0 -416px; width: 36px; height: 36px;}
+.sprite.icon_vk_s_png {background-position: 0 -456px; width: 36px; height: 36px;}
