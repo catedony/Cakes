@@ -2,7 +2,7 @@
 
 html {
 	padding: 0;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	font-size: 16px;
 }
 @media (min-width: 1024px) {
@@ -910,10 +910,20 @@ PERSONAL ORDER
 	padding: 0;
 	font-family: var(--sans-serif);
 	color: var(--dark-grey);
+	display: inline-block;
+	width: 300%;
+	/* display: flex; */
+	/* overflow-x: hidden;  */
+}
+.filling-slider__item {
+	width: 30%;
+	/* width: 100%; */
+	flex-shrink: 0;
+	transition: all 0.5s;
+	position: relative;
 }
 .filling__img {
-	width: 100%;
-
+	max-width: 100%;
 }
 .filling__title {
 	font-weight: bold;
@@ -936,6 +946,7 @@ PERSONAL ORDER
 }
 .filling__img-container {
 	position: relative;
+	display: inline-block;
 }
 .filling__counter {
 	font-family: var(--sans-serif);
@@ -1041,8 +1052,6 @@ PERSONAL ORDER
 	}
 }
 @media (min-width: 1030px) {
-	
-
 
 	.filling__title {
 		font-size: 0.85rem;

@@ -19,5 +19,29 @@ for (let i = 0; i < cards.length; i++) {
   }
 }
 
-//slider
+//filling-slider
+var count = 0;
+var slides = document.querySelectorAll('.filling-slider__item');
+var width = document.querySelector('.filling-slider__item').clientWidth;
 
+document.querySelector('.filling-slider__next').onclick = function() {
+	if (count >= 0 && count < slides.length -1 ) {
+		count++;
+	} else {
+		count = 0;
+	}
+	for (var i = 0; i < slides.length; i++) {
+		slides[i].style.transform = 'translateX(-' + width*count + 'px)';
+	}
+}
+
+document.querySelector('.filling-slider__prev').onclick = function() {
+	if (count > 0) {
+		count--;
+	} else {
+		count = 0;
+	}
+	for (var i = 0; i < slides.length; i++) {
+		slides[i].style.transform = 'translateX(-' + width * count + 'px)';
+	}
+}
