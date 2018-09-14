@@ -19,29 +19,45 @@ for (let i = 0; i < cards.length; i++) {
   }
 }
 
-//filling-slider
-var count = 0;
-var slides = document.querySelectorAll('.filling-slider__item');
-var width = document.querySelector('.filling-slider__item').clientWidth;
+//позиционирование slider-points
 
-document.querySelector('.filling-slider__next').onclick = function() {
-	if (count >= 0 && count < slides.length -1 ) {
-		count++;
-	} else {
-		count = 0;
-	}
-	for (var i = 0; i < slides.length; i++) {
-		slides[i].style.transform = 'translateX(-' + width*count + 'px)';
-	}
-}
+// function positionPoints() {
+// 	const img = document.querySelector('.filling__img-container');
+// 	let height = img.offsetHeight;
+// 	const points = document.querySelector('.filling-slider__points');
+// 	let top = height + 5 + 'px';
+// 	points.style.top = top;
+// 	console.log(top);
+// }
 
-document.querySelector('.filling-slider__prev').onclick = function() {
-	if (count > 0) {
-		count--;
-	} else {
-		count = 0;
+// positionPoints();
+// window.onresize = positionPoints;
+
+// function positionPoints() {
+// 		const btn = document.querySelector('.size__btn');
+// 		let btnStyle = getComputedStyle(btn);
+// 		let height2 = parseFloat(btnStyle.marginBottom) + parseFloat(btnStyle.marginTop);
+// 		let height = btn.offsetHeight;
+// 		const points = document.querySelector('.size-slider__points');
+// 		let bottom = height + height2 + 40 + 'px';
+// 		points.style.bottom = bottom;
+// 		console.log(height);
+// 	}
+	
+// 	positionPoints();
+// 	window.onresize = positionPoints;
+
+function positionPoints() {
+	let img = document.querySelector('.decor__img').getBoundingClientRect();
+	let height = img.bottom + pageYOffset;
+	let height2 = document.querySelector('.decor-slider').offsetTop;
+	let delta = height - height2;
+
+	const points = document.querySelector('.decor-slider__points');
+		let top = delta + 5 + 'px';
+		points.style.top = top;
+		console.log(delta);
 	}
-	for (var i = 0; i < slides.length; i++) {
-		slides[i].style.transform = 'translateX(-' + width * count + 'px)';
-	}
-}
+	
+	positionPoints();
+	window.onresize = positionPoints;
