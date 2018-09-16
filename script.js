@@ -21,43 +21,41 @@ for (let i = 0; i < cards.length; i++) {
 
 //позиционирование slider-points
 
-// function positionPoints() {
-// 	const img = document.querySelector('.filling__img-container');
-// 	let height = img.offsetHeight;
-// 	const points = document.querySelector('.filling-slider__points');
-// 	let top = height + 5 + 'px';
-// 	points.style.top = top;
-// 	console.log(top);
-// }
+function positionPointsFilling() {
+	const img = document.querySelector('.filling__img-container');
+	const points = document.querySelector('.filling-slider__points');
+	let height = img.offsetHeight;
+	let top = height + 5 + 'px';
+	points.style.top = top;
+}
 
-// positionPoints();
-// window.onresize = positionPoints;
-
-// function positionPoints() {
-// 		const btn = document.querySelector('.size__btn');
-// 		let btnStyle = getComputedStyle(btn);
-// 		let height2 = parseFloat(btnStyle.marginBottom) + parseFloat(btnStyle.marginTop);
-// 		let height = btn.offsetHeight;
-// 		const points = document.querySelector('.size-slider__points');
-// 		let bottom = height + height2 + 40 + 'px';
-// 		points.style.bottom = bottom;
-// 		console.log(height);
-// 	}
-	
-// 	positionPoints();
-// 	window.onresize = positionPoints;
-
-function positionPoints() {
-	let img = document.querySelector('.decor__img').getBoundingClientRect();
-	let height = img.bottom + pageYOffset;
-	let height2 = document.querySelector('.decor-slider').offsetTop;
-	let delta = height - height2;
-
-	const points = document.querySelector('.decor-slider__points');
-		let top = delta + 5 + 'px';
-		points.style.top = top;
-		console.log(delta);
+function positionPointsSize() {
+		const btn = document.querySelector('.size__btn');
+		const points = document.querySelector('.size-slider__points');
+		let btnStyle = getComputedStyle(btn);
+		let height2 = parseFloat(btnStyle.marginBottom) + parseFloat(btnStyle.marginTop);
+		let height = btn.offsetHeight;
+		let bottom = height + height2 + 40 + 'px';
+		points.style.bottom = bottom;
 	}
 	
-	positionPoints();
-	window.onresize = positionPoints;
+function positionPointsDecor() {
+	const points = document.querySelector('.decor-slider__points');
+	let imgRect = document.querySelector('.decor__img').getBoundingClientRect();
+	let height = imgRect.bottom + pageYOffset;
+	let height2 = document.querySelector('.decor-slider').offsetTop;
+	let delta = height - height2;
+	let top = delta + 5 + 'px';
+	points.style.top = top;
+	}
+	
+	positionPointsFilling();
+	positionPointsSize();
+	positionPointsDecor();
+
+	window.onresize = function() {
+		positionPointsDecor();
+		positionPointsSize();
+		positionPointsFilling();
+	}
+	

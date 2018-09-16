@@ -140,7 +140,7 @@ const decor = {
 	pointsContainer: document.querySelector('.decor-slider__points'),
 	btnNext: 	document.querySelector('.decor-slider__next'),
 	btnPrev: 	document.querySelector('.decor-slider__prev'),
-	breakpoint: 575,
+	breakpoint: 646,
 	pair: true /*перемотка двух слайдов за раз*/
 }
 

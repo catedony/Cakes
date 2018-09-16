@@ -949,6 +949,7 @@ PERSONAL ORDER
   position: relative;
 	text-align: center;
 	transition: all 0.5s;
+	box-sizing: border-box;
 }
 
 .filling__img {
@@ -1418,7 +1419,7 @@ PERSONAL ORDER
 		padding: 15px 10px;
 	}
 }
-@media (min-width: 575px) {
+@media (min-width: 646px) {
 	.personal-order__decor-title {
 			position: absolute;
 	}
