@@ -1,4 +1,50 @@
 
+// function makeChoice(item, valueContainer, formField) {
+// 	const value = item.querySelector(valueContainer).innerHTML;
+// 	const input = formField;
+// 	input.value = value;
+// 	console.log(value);
+// }
+ 
+// for (let i = 0; i < filling.choiceBtn.length; i++) {
+//   filling.choiceBtn[i].onclick = function () {
+// 		const parent = this.parentElement;
+// 		makeChoice(parent, '.filling__title', 'choice-filling');
+//   }
+// }
+
+// for (let i = 0; i < decor.choiceBtn.length; i++) {
+//   decor.choiceBtn[i].onclick = function () {
+// 		const parent = this.parentElement;
+// 		makeChoice(parent, '.decor__title', 'choice-decor');
+//   }
+// }
+
+// for (let i = 0; i < size.choiceBtn.length; i++) {
+	
+//   size.choiceBtn[i].addEventListener('click', function () {
+// 		const parent = this.parentElement;
+// 		makeChoice(parent, '.size__img', 'choice-size');
+//   });
+// }
+
+// for (let i = 0; i < size.images.length; i++) {
+//   size.images[i].onclick = function() {
+// 		const parent = this.parentElement;
+// 		makeChoice(parent, '.size__img', 'choice-size');
+//   }
+// }
+
+// for (let i = 0; i < decor.slides.length; i++) {
+//   decor.slides[i].addEventListener('click', function() {
+// 		const parent = decor.slides[i];
+// 		makeChoice(parent, '.decor__title', 'choice-decor');
+//   });
+// }
+
+
+
+
 //filling-slider
 // var count = 0;
 // var slides = document.querySelectorAll('.filling-slider__item');
