@@ -5,13 +5,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Description" content="Интернет-магазин тортов">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
 	<title>Cakes</title>
 </head>
 
 <body class="page">
-	<header class="header page__header">
+	<dialog class="dialog top-dialog">
+<h2 class="dialog__header">Приветствуем Вас!</h2>
+		<div class="dialog__content">
+				<p>Все ненавидят всплывающие окна, которые выскакивают сами по себе. Но я просто хотела потренироваться ^__^ </p>
+			</div>
+			<div>
+				<button class="top-dialog__btn dialog__btn btn ">Ok</button>
+			</div>
+	</dialog>
+	<header class="header page__header" id="header">
 		<h1 class="logo header__logo">Cakes</h1>
 		<div class="header__burger burger">
 			<div class="burger__layer layer1"></div>
@@ -22,26 +32,27 @@
 			<h2 class="main-menu__title title_sr-only">Главное меню</h2>
 			<ul class="main-menu__list">
 				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Наши торты</a>
+					<a href="#catalog" class="main-menu__link">Наши торты</a>
 				</li>
 				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Индивидуальный заказ</a>
+					<a href="#personal-order" class="main-menu__link">Индивидуальный заказ</a>
 				</li>
 				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Отзывы</a>
+					<a href="#reviews" class="main-menu__link">Отзывы</a>
 				</li>
 				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">О нас</a>
+					<a href="#about" class="main-menu__link">О нас</a>
 				</li>
 				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Как заказать</a>
+					<a href="#order" class="main-menu__link">Как заказать</a>
 				</li>
 				<li class="main-menu__item">
-					<a href="#" class="main-menu__link">Контакты</a>
+					<a href="#contacts" class="main-menu__link">Контакты</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="header__tel">+7 123 456 78 91</div>
+		<a href="#header" class="header__up-btn up-btn" title="Наверх">^</a>
 	</header>
 
 	<main class="main">
@@ -63,7 +74,7 @@
 			<button class="banner__btn btn">Выбрать торт</button>
 		</section>
 		<section class="main__catalog catalog section">
-			<h2 class="catalog__title section__title">Наши торты</h2>
+			<h2 class="catalog__title section__title" id="catalog">Наши торты</h2>
 			<ul class="catalog__list">
 				<li class="catalog__item catalog__item-1">
 					<a href="#" class="catalog__card card card_classic">
@@ -125,7 +136,7 @@
 			</ul>
 		</section>
 		<section class="personal-order section">
-			<h2 class="personal-order__title section__title">Индивидуальный заказ</h2>
+			<h2 class="personal-order__title section__title"  id="personal-order">Индивидуальный заказ</h2>
 			<div class="personal-order__subtitle section__subtitle">Соберите торт в 3 шага</div>
 			<section class="personal-order__step">
 				<h3 class="personal-order__step-title">
@@ -422,11 +433,23 @@
 					</section>
 					<input type="submit" class="choice__btn btn" value="Заказать торт" />
 				</form>
+				<dialog class="dialog order-dialog">
+						<h2 class="dialog__header">Ваш заказ: </h2>
+								<div class="dialog__content">
+										<p class="order-dialog__filling dialog__choice"></p>
+										<p class="order-dialog__size dialog__choice"></p>
+										<p class="order-dialog__decor dialog__choice"></p>
+										<div class="dialog__footer">Хороший выбор!</p>
+									</div>
+									<div>
+										<button class="order-dialog__btn dialog__btn btn ">Ok</button>
+									</div>
+							</dialog>
 			</section>
 		</section>
 
 		<section class="main__reviews reviews section">
-			<h2 class="reviews__title section__title">Отзывы</h2>
+			<h2 class="reviews__title section__title"  id="reviews">Отзывы</h2>
 			<div class="reviews-slider">
 					<div class="reviews-slider__points slider-points">
 							<!-- <span class="slider-points__point"></span>
@@ -452,7 +475,7 @@
 									спасибо за своевременную доставку! Теперь
 									будем заказывать торты только у вас для наших семейных праздников:)</span>
 					
-								<button class="reviews-slider__unfold-btn">Развернуть</button>
+								<!-- <button class="reviews-slider__unfold-btn">Развернуть</button> -->
 							</div>
 							<div class="reviews-slider__counter">1/7</div>
 						</li>
@@ -468,7 +491,7 @@
 								<div class="reviews-slider__user-info">менеджер, 25 лет</div>
 								<span class="reviews-slider__review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic rem non, unde alias quisquam temporibus.</span>
 					
-								<button class="reviews-slider__unfold-btn">Развернуть</button>
+								<!-- <button class="reviews-slider__unfold-btn">Развернуть</button> -->
 							</div>
 							<div class="reviews-slider__counter">2/7</div>
 						
@@ -485,7 +508,7 @@
 								<div class="reviews-slider__user-info">программист, 32 года</div>
 								<span class="reviews-slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla dolore cum! Maxime fugiat sapiente et temporibus laborum asperiores optio libero distinctio! Debitis facilis porro dolore aspernatur beatae esse placeat.</span>
 					
-								<button class="reviews-slider__unfold-btn">Развернуть</button>
+								<!-- <button class="reviews-slider__unfold-btn">Развернуть</button> -->
 							</div>
 							<div class="reviews-slider__counter">3/7</div>
 							
@@ -502,7 +525,7 @@
 								<div class="reviews-slider__user-info">врач, 54 года</div>
 								<span class="reviews-slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic tempore iste in saepe vel sapiente autem cupiditate cum inventore?</span>
 					
-								<button class="reviews-slider__unfold-btn">Развернуть</button>
+								<!-- <button class="reviews-slider__unfold-btn">Развернуть</button> -->
 							</div>
 							<div class="reviews-slider__counter">4/7</div>
 							
@@ -519,7 +542,7 @@
 								<div class="reviews-slider__user-info">библиотекарь, 32 года</div>
 								<span class="reviews-slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic tempore iste in saepe vel sapiente autem cupiditate cum inventore?</span>
 					
-								<button class="reviews-slider__unfold-btn">Развернуть</button>
+								<!-- <button class="reviews-slider__unfold-btn">Развернуть</button> -->
 							</div>
 							<div class="reviews-slider__counter">5/7</div>
 							
@@ -536,7 +559,7 @@
 								<div class="reviews-slider__user-info">сантехник, 45 лет</div>
 								<span class="reviews-slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic tempore iste in saepe vel sapiente autem cupiditate cum inventore? Lorem ipsum dolor sit amet.</span>
 					
-								<button class="reviews-slider__unfold-btn">Развернуть</button>
+								<!-- <button class="reviews-slider__unfold-btn">Развернуть</button> -->
 							</div>
 							<div class="reviews-slider__counter">6/7</div>
 							
@@ -553,7 +576,7 @@
 								<div class="reviews-slider__user-info">студент, 19 лет</div>
 								<span class="reviews-slider__review">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero hic tempore iste in saepe vel sapiente autem cupiditate cum inventore?</span>
 					
-								<button class="reviews-slider__unfold-btn">Развернуть</button>
+								<!-- <button class="reviews-slider__unfold-btn">Развернуть</button> -->
 							</div>
 							<div class="reviews-slider__counter">7/7</div>
 							
@@ -566,7 +589,7 @@
 			</div>
 		</section>
 		<section class="about-us section">
-			<h2 class="about-us__title section__title">О нас</h2>
+			<h2 class="about-us__title section__title"  id="about">О нас</h2>
 			<picture class="about-us__img-container">
 				<source media="(max-width: 550px)" srcset="img/about-baker-sm.png">
 				<source media="(max-width: 1280px)" srcset="img/about-baker-md.png">
@@ -656,7 +679,7 @@
 		</section>
 
 		<section class="make-order section">
-			<h2 class="make-order__title section__title">Как заказать</h2>
+			<h2 class="make-order__title section__title"  id="order">Как заказать</h2>
 			<ol class="make-order__list">
 				<li class="make-order__item make-order__item-1">
 					<h3 class="make-order__subtitle">Срок заказа</h3>
@@ -676,16 +699,16 @@
 		</section>
 		<section class="contacts section">
 
-			<h2 class="contacts__title section__title">Контакты</h2>
+			<h2 class="contacts__title section__title"  id="contacts">Контакты</h2>
 			<div class="contacts__subtitle section__subtitle">Остались вопросы?</div>
 			<div class="contacts__col-1">
 				<p class="contacts__text">
 					Заполните форму ниже и наш кондитер свяжется с Вами
 				</p>
 				<form action="post" class="contacts__send-message send-message">
-					<input aria-label="Ваше имя" placeholder="Ваше имя" type="text" name="name" class="send-message__input">
-					<input aria-label="Email адрес" placeholder="Email адрес" type="text" name="Email" class="send-message__input">
-					<textarea rows="1" aria-label="Ваш вопрос" placeholder="Ваш вопрос" name="text" class="send-message__textarea"></textarea>
+					<input aria-label="Ваше имя" placeholder="Ваше имя" type="text" name="name" class="send-message__input" id="name" required>
+					<input aria-label="Email адрес" placeholder="Email адрес" type="email" name="Email" class="send-message__input" id="email" required>
+					<textarea rows="1" aria-label="Ваш вопрос" placeholder="Ваш вопрос" name="text" class="send-message__textarea" id="message" required></textarea>
 					<input type="submit" value="Отправить" class="send-message__btn btn">
 				</form>
 			</div>

@@ -1,3 +1,30 @@
+//pop-up window
+
+window.addEventListener('scroll', openModal);
+
+function openModal(){
+	document.querySelector('.top-dialog').showModal();
+	document.querySelector('.top-dialog').classList.add('dialog_visible');
+	window.removeEventListener('scroll', openModal);
+}
+
+document.querySelector('.top-dialog__btn').onclick = function() {
+	document.querySelector('.top-dialog').close();
+}
+
+document.querySelector('.choice__btn').onclick = function(event) {
+	event.preventDefault();
+	document.querySelector('.order-dialog__filling').innerHTML = document.getElementById('choice-filling').value;
+	document.querySelector('.order-dialog__size').innerHTML = document.getElementById('choice-size').value;
+	document.querySelector('.order-dialog__decor').innerHTML = document.getElementById('choice-decor').value;
+	document.querySelector('.order-dialog').showModal();
+	document.querySelector('.order-dialog').classList.add('dialog_visible');
+}
+
+document.querySelector('.order-dialog__btn').onclick = function() {
+	document.querySelector('.order-dialog').close();
+	document.querySelector('.order-dialog').classList.remove('dialog_visible');
+}
 //pop-up menu
 
 document.querySelector('.burger').onclick = () => {
@@ -35,7 +62,7 @@ function positionPointsSize() {
   let btnStyle = getComputedStyle(btn);
   let height2 = parseFloat(btnStyle.marginBottom) + parseFloat(btnStyle.marginTop);
   let height = btn.offsetHeight;
-  let bottom = height + height2 + 40 + 'px';
+  let bottom = height + height2 + 25 + 'px';
   points.style.bottom = bottom;
 }
 
@@ -59,3 +86,14 @@ window.onresize = function () {
   positionPointsFilling();
 }
 
+//up-btn 
+window.onscroll = function() {
+	document.querySelector('.up-btn').style.display = pageYOffset > 1000 ? 'block' : 'none';
+}
+
+//обработка отправки сообщения
+// document.querySelector('.send-message__btn').onclick = function() {
+// 	let name = document.getElementById('name').value;
+// 	let email = document.getElementById('name').value;
+// 	let message = document.getElementById('name').value;
+// }
