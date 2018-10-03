@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="Description" content="Интернет-магазин тортов">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Cakes</title>
 </head>
 
@@ -21,15 +21,15 @@
 				<button class="top-dialog__btn dialog__btn btn ">Ok</button>
 			</div>
 	</dialog>
-	<header class="header page__header" id="header">
+	<header class="header" id="header">
 		<h1 class="logo header__logo">Cakes</h1>
 		<div class="header__burger burger">
-			<div class="burger__layer layer1"></div>
-			<div class="burger__layer layer2"></div>
-			<div class="burger__layer layer3"></div>
+			<div class="burger__layer burger__layer1"></div>
+			<div class="burger__layer burger__layer2"></div>
+			<div class="burger__layer burger__layer3"></div>
 		</div>
 		<nav class="main-menu header__menu">
-			<h2 class="main-menu__title title_sr-only">Главное меню</h2>
+			<h2 class="main-menu__title">Главное меню</h2>
 			<ul class="main-menu__list">
 				<li class="main-menu__item">
 					<a href="#catalog" class="main-menu__link">Наши торты</a>
@@ -61,11 +61,11 @@
 			<div class="banner__subtitle section__subtitle">Ручная работа</div>
 			<ul class="banner__list">
 				<li class="banner__item">
-					<span class="banner__icon icon icon-natural-ban"></span>
+					<span class="banner__icon icon icon__natural-ban"></span>
 					<span class="banner__text">Натуральные ингредиенты</span>
 				</li>
 				<li class="banner__item">
-					<span class="banner__icon icon icon-delivery"></span>
+					<span class="banner__icon icon icon__delivery"></span>
 					<span class="banner__text">Доставка бесплатно при заказе от 2000 рублей
 						<sup>*</sup>
 					</span>
@@ -77,7 +77,7 @@
 			<h2 class="catalog__title section__title" id="catalog">Наши торты</h2>
 			<ul class="catalog__list">
 				<li class="catalog__item catalog__item-1">
-					<a href="#" class="catalog__card card card_classic">
+					<a href="#" class="catalog__card card card__classic">
 						<h3 class="card__title">Классические</h3>
 						<span class="card__quantity">24 вида</span>
 
@@ -88,7 +88,7 @@
 				</li>
 
 				<li class="catalog__item catalog__item-2">
-					<a href="#" class="catalog__card card card_mousse">
+					<a href="#" class="catalog__card card card__mousse">
 						<h3 class="card__title">Муссовые</h3>
 						<span class="card__quantity">12 видов</span>
 						<!-- <img src="" alt="" class="card__img"> -->
@@ -97,7 +97,7 @@
 					</a>
 				</li>
 				<li class="catalog__item catalog__item-3">
-					<a href="#" class="catalog__card card card_wedding">
+					<a href="#" class="catalog__card card card__wedding">
 						<h3 class="card__title">Свадебные</h3>
 						<span class="card__quantity">20 видов</span>
 						<!-- <img src="" alt="" class="card__img"> -->
@@ -107,7 +107,7 @@
 
 				</li>
 				<li class="catalog__item catalog__item-4">
-					<a href="#" class="catalog__card card card_men">
+					<a href="#" class="catalog__card card card__men">
 						<h3 class="card__title">Мужчинам</h3>
 						<span class="card__quantity">12 видов</span>
 						<!-- <img src="" alt="" class="card__img"> -->
@@ -116,7 +116,7 @@
 					</a>
 				</li>
 				<li class="catalog__item catalog__item-5">
-					<a href="#" class="catalog__card card card_women">
+					<a href="#" class="catalog__card card card__women">
 						<h3 class="card__title">Женщинам</h3>
 						<span class="card__quantity">16 видов</span>
 						<!-- <img src="" alt="" class="card__img"> -->
@@ -125,7 +125,7 @@
 					</a>
 				</li>
 				<li class="catalog__item catalog__item-6">
-					<a href="#" class="catalog__card card card_kids">
+					<a href="#" class="catalog__card card card__kids">
 						<h3 class="card__title">Детские</h3>
 						<span class="card__quantity">18 видов</span>
 						<!-- <img src="" alt="" class="card__img"> -->
@@ -143,7 +143,7 @@
 					<span class="personal-order__number">01</span>Выберите начинку</h3>
 				<section class="filling-slider">
 						<div class="filling-slider__points slider-points"></div>
-					<button class="filling-slider__prev slider-btn slider-btn-prev" title="Назад"></button>
+					<button class="filling-slider__prev slider-btn slider-btn__prev" title="Назад"></button>
 					
 					<div class="filling-slider__window">
 						<ul class="filling-slider__list">
@@ -283,7 +283,7 @@
 							</li>
 						</ul>
 					</div>
-					<button class="filling-slider__next slider-btn slider-btn-next" title="Вперед"></button>
+					<button class="filling-slider__next slider-btn slider-btn__next" title="Вперед"></button>
 				</section>
 			</section>
 			<section class="personal-order__step personal-order__size">
@@ -331,7 +331,7 @@
 					<span class="personal-order__number">03</span>Оформление</h3>
 				<section class="decor-slider">
 						<div class="decor-slider__points slider-points"></div>
-					<button class="decor-slider__prev slider-btn slider-btn-prev" title="Назад"></button>
+					<button class="decor-slider__prev slider-btn slider-btn__prev" title="Назад"></button>
 				<div class="decor-slider__window">
 						<ul class="decor-slider__list">
 							<li class="decor-slider__item decor">
@@ -411,7 +411,7 @@
 						</ul>
 					</div>
 					<!-- <div class="decor__counter decor__counter_desktop">2/2</div> -->
-					<button class="decor-slider__next slider-btn slider-btn-next" title="Вперед"></button>
+					<button class="decor-slider__next slider-btn slider-btn__next" title="Вперед"></button>
 
 				</section>
 
@@ -458,7 +458,7 @@
 							<span class="slider-points__point"></span>
 							<span class="slider-points__point"></span> -->
 						</div>
-				<button class="reviews-slider__prev slider-btn slider-btn-prev" title="Назад"></button>
+				<button class="reviews-slider__prev slider-btn slider-btn__prev" title="Назад"></button>
 				<div class="reviews-slider__window">
 					<ul class="reviews-slider__list">
 						<li class="reviews-slider__item">
@@ -583,7 +583,7 @@
 						</li>
 					</ul>
 				</div>
-				<button class="reviews-slider__next slider-btn  slider-btn-next" title="Вперед"></button>
+				<button class="reviews-slider__next slider-btn  slider-btn__next" title="Вперед"></button>
 
 
 			</div>
@@ -644,7 +644,7 @@
 				<ul class="features__list">
 					<li class="features__item">
 						<div class="features__icon-container">
-							<span class="features__icon icon icon-natural-features"></span>
+							<span class="features__icon icon icon__natural-features"></span>
 						</div>
 						<div class="features__content">
 							<h4 class="features__subtitle-2">Без искусственных добавок</h4>
@@ -656,7 +656,7 @@
 					<li class="features__item">
 
 						<div class="features__icon-container">
-							<span class="features__icon icon icon-fresh"></span>
+							<span class="features__icon icon icon__fresh"></span>
 						</div>
 						<div class="features__content">
 							<h4 class="features__subtitle-2">Свежий торт в день торжества</h4>
@@ -741,7 +741,7 @@
 		<div class="footer__top">
 			<div class="logo footer__logo">Cakes</div>
 			<nav class="menu footer__menu">
-				<h2 class="menu__title title_sr-only">Меню</h2>
+				<h2 class="menu__title">Меню</h2>
 				<ul class="menu__list">
 					<li class="menu__item">
 						<a href="#" class="menu__link">Наши торты</a>
@@ -776,10 +776,10 @@
 				</ul>
 			</div>
 		</div>
-		<hr class="footer__hr hr">
-		<div class="footer__copyright copyright">
-			<span class="copyright__sign">&copy;</span>
-			<span class="copyright__text">2018 Cakes</span>
+		<hr class="footer__hr">
+		<div class="footer__copyright">
+			<span class="footer__copyright-sign">&copy;</span>
+			<span class="footer__copyright-text">2018 Cakes</span>
 		</div>
 		<div class="footer__soc-icons soc-icons footer__soc-icons_sm">
 			<ul class="soc-icons__list">
@@ -792,10 +792,7 @@
 			</ul>
 		</div>
 	</footer>
-	<script src="sliders.js"></script>
-	<script src="form.js"></script>
-	<script src="script.js"></script>
-	
+	<script src="js/script.js"></script>
 	
 </body>
 

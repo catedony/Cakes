@@ -1,0 +1,32 @@
+{
+  "name": "cake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catedony/Cakes.git"
+  },
+  "author": "Cate Dony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catedony/Cakes/issues"
+  },
+  "homepage": "https://github.com/catedony/Cakes#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "imagemin-pngcrush": "^5.1.0"
+  }
+}

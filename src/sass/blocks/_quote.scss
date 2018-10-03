@@ -1,0 +1,96 @@
+.quote {
+ @include section-padding(0, 0);
+
+ &__text {
+	color: $dark-grey;
+	text-align: center;
+	font-family: $serif;
+	font-size: 0.8rem;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.25;
+	width: 100%;
+	margin: 25px 0 0;
+	padding: 30px 0 51px;
+	position: relative;
+}
+&__text::before,
+&__text::after {
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+&__text::before {
+	width: 26px;
+	height: 17px;
+	background-image: url(../img/quote-quotes-sm.png);
+	background-size: contain;
+	top: 0;
+	left: 45%;
+}
+&__text::after {
+	width: 64px;
+	height: 31px;
+	background-image: url(../img/quote-sign-sm.png);
+	background-size: contain;
+	bottom: 0;
+	left: 38%;
+}
+
+@media (min-width: 430px) {
+	&__text {
+		font-size: 0.9rem;
+	}
+}
+@media (min-width: 640px) {
+	& {
+		padding-bottom: 70px;
+	}
+}
+@media (min-width: 690px) {
+	&__text {
+		width: 50%;
+		padding: 40px 0 62px;
+		margin: 0 auto;
+		line-height: 1.5;
+	}
+	&__text::before {
+		width: 35px;
+		height: 22px;
+		background-image: url(../img/quote-quotes-md.png);
+	}
+	&__text::after {
+		width: 82px;
+		height: 40px;
+		background-image: url(../img/quote-sign-md.png);
+		left: 39%;
+	}
+}
+@media (min-width: 1280px) {
+	& {
+		@include section-padding(90px, 50px);
+
+		&__text {
+		width: 55%;
+		padding: 80px 0 120px;
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+	&__text::before {
+		width: 60px;
+		height: 40px;
+		background-image: url(../img/quote-quotes-lg.png);
+	}
+	&__text::after {
+		width: 149px;
+		height: 73px;
+		background-image: url(../img/quote-sign-lg.png);
+		left: 39%;
+	}	
+	}
+
+}
+}
+
+

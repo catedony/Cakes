@@ -1,0 +1,46 @@
+.slider-btn {
+	display: none;
+	background-color: white;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 25%;
+		box-sizing: border-box;
+		height: 40px;
+		width: 40px;
+		padding: 0 1px 5px 0;
+		border: none;
+		border-radius: 50%;
+		font-size: 2.4rem;
+		line-height: 1;
+		text-align: center;
+		box-shadow: 0 2px 2px -1px #ddd;
+		cursor: pointer;
+		flex-shrink: 0;
+
+		&__prev {
+			background-image: url(../img/arrow-left.png);
+		}
+		&__next {
+			background-image: url(../img/arrow-right.png);
+		}
+
+		&:hover {
+			box-shadow: 0 2px 7px -2px #b5b5b5;
+		}
+		&:focus {
+			outline: 1px dotted $pink;
+		}
+
+		@media (min-width: 700px) {
+			& {
+				display: block;
+			}
+		}
+		@media (min-width: 1024px) {
+			& {
+				box-shadow: none;
+				background-color: inherit;
+			}
+		}
+}
+

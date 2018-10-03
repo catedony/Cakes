@@ -1,0 +1,130 @@
+.card {
+	box-sizing: border-box;
+	background-color: white;
+	height: 120px;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: block;
+	background-repeat: no-repeat;
+	padding: 13px;
+
+	&__title {
+		margin: 0;
+		font-size: 0.9rem;
+		line-height: 1;
+		font-weight: lighter;
+		color: $dark-grey;
+		font-family: $sans-serif;
+	}
+	
+	&__link {
+		display: none;
+	}
+	
+	&__quantity {
+		font-size: 0.8rem;
+		color: $mid-grey;
+		font-family: $sans-serif;
+	}
+	@each $card in classic, mousse, wedding, men, women, kids {
+		&__#{$card} {
+			background-image: url('../img/catalog-cake-' + $card + '-sm.png');
+		}
+	}  
+	&__classic {
+		background-position: 50% 38%;
+	}
+	
+	&__mousse {
+		background-position: 50% 57%;
+	}
+	
+	&__wedding {
+		background-position: 50% 35%;
+	}
+	
+	&__men {
+		background-position: 3% 47%;
+	}
+	
+	&__women {
+		background-position: 71% 48%;
+	}
+	
+	&__kids {
+		background-position: 5% 45%;
+		background-color: #f3f3f5;
+	}
+	@media (min-width: 400px) {
+		& {
+			height: 30vw;
+			padding: 15px;
+			box-shadow: 2px 2px 4px -2px #dedede;
+			background-size: contain;
+			background-position: right bottom;
+		}
+	}
+
+	@media (min-width: 600px) {
+	
+		& {
+			height: 100%;
+			padding: 21px 25px;
+			&:hover {
+				box-shadow: 0 5px 20px -5px #d6a4ae;
+			}
+
+			@each $card in classic, mousse, wedding, men, women, kids {
+				&__#{$card} {
+					background-image: url('../img/catalog-cake-' + $card + '-md.png');
+				}
+			}  
+		}
+		
+	}
+	@media (min-width: 1024px) {
+		@each $card in classic, mousse, wedding, men, women, kids {
+			&__#{$card} {
+				background-image: url('../img/catalog-cake-' + $card + '-lg.png');
+			}
+		}  
+	
+	}
+	@media (min-width: 1280px) {
+		& {
+			padding: 38px 45px;
+			box-shadow: 0 5px 20px -5px #edc7cf;
+			position: relative;
+			display: block;
+
+			&__title {
+				font-size: 1.1rem;
+				line-height: 1;
+			}
+			&__quantity {
+				font-size: 0.85rem;
+			}
+			&__link {
+				display: inline-block;
+				position: absolute;
+				bottom: 37px;
+				right: 70px;
+				font-family: $sans-serif;
+				font-size: 0.85rem;
+				color: $dark-grey;
+				vertical-align: middle;
+				z-index: 5;
+			}
+			&__arrow {
+				display: inline-block;
+				width: 17px;
+				height: 12px;
+				margin-left: 20px;
+				background-image: url('../img/card-arrow.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+}
+

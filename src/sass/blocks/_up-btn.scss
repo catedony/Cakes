@@ -1,0 +1,17 @@
+.up-btn {
+	display: none;
+	width: 30px;
+	height: 30px;
+	line-height: 37px;
+	font-size: 30px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: $pink;
+	text-decoration: none;
+	border: 1px dotted $pink;
+	position: fixed;
+	top: 50%;
+	left: 2%;
+	text-align: center;
+	z-index: 10;
+}

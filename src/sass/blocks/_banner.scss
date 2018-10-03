@@ -1,0 +1,150 @@
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: $bg-pink;
+	background-image: url('../img/banner-bg-sm.png');
+	background-repeat: no-repeat;
+	background-position: 42% -210px;
+	text-align: center;
+	@include section-padding(0, 0);
+
+	&__title {
+		@include section-title();
+		box-sizing: border-box;
+		font-size: 2.5em;
+		padding-top: 7.95rem;
+		margin: 0;
+		text-align: center;
+		line-height: 0.9;
+		letter-spacing: 0.2rem;
+	}
+	
+	&__subtitle {
+		@include section-subtitle();
+		text-align: center;
+		margin: 0.7rem 0;
+	}
+	
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		/* align-items: left; */
+	}
+	
+	&__item {
+		font-family: $sans-serif;
+		font-size: 0.95rem;
+		line-height: 0.7;
+		letter-spacing: -0.5px;
+		margin-bottom: 13px;
+		display: flex;
+		justify-content: flex-start;
+		min-width: 270px;
+	}
+	&__text {
+		padding: 4px 0;
+		text-align: left;
+	}
+	
+	&__icon {
+		margin-right: 10px;
+	}
+	
+	&__btn {
+		margin: 27px 0;
+	}
+
+	@media (min-width: 400px) {
+		& {
+			background-position-x: center;
+	
+			&__title {
+				font-size: 3.7rem;
+				width: 100%;
+				min-width: 280px;
+				padding-top: 160px;
+				line-height: 0.9;
+				letter-spacing: 5px;
+			}
+			&__subtitle {
+				text-align: left;
+				margin: 0.7rem 0;
+				font-size: 2.1rem;
+			}	
+			&__list {
+				order: 1;
+				justify-content: center;
+				margin-top: 30px;
+			}
+			&__item {
+				align-items: center;
+				line-height: 1;
+			}
+			&__text {
+				padding: 5px 0;
+			}
+			&__icon {
+				margin-right: 12px;
+			}
+		}
+	}
+	
+	@media (min-width: 678px) {
+		& {
+			align-items: flex-start;
+			background-image: url('../img/banner-bg-md.png');
+			background-position: right 8px;
+			padding: 0 46px 110px;
+	
+			&__title {
+				min-width: 0;
+				width: 45%;
+				text-align: left;
+				padding-top: 103px;
+				letter-spacing: 5px;
+				line-height: 0.87;
+			}
+			&__list {
+				margin-top: 120px;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+			&__item {
+				min-width: 37%;
+				width: 37%;
+				align-items: flex-end;
+			}
+		}
+	}
+	@media (min-width: 1280px) {
+	
+		& {
+			background: none;
+			@include section-padding(0, 233px);
+	
+			&__title {
+				width: 32%;
+				padding-top: 145px;
+				letter-spacing: 2.5px;
+			}
+			&__subtitle {
+				font-size: 1.8rem;
+				margin: 10px 0;
+			}	
+			&__list {
+				margin-top: 100px;
+			}
+			&__item {
+				font-size: 0.67rem;
+				line-height: 1.1;
+			}
+		}
+	}
+}
+
+

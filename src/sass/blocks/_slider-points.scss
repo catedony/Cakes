@@ -1,0 +1,26 @@
+.slider-points {
+	overflow: hidden;
+	height: 10px;
+	width: 50px;
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	@media (min-width: 700px) {
+		& {
+			display: none;
+		}
+	}
+
+	&__point {
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background-color: #ddd;
+		margin: 0 2px;
+		transition: all 0.5s;
+		flex-shrink: 0;
+	}
+}

@@ -1,0 +1,73 @@
+.care {
+	@include section-padding(30px, 170px);
+	color: $dark-grey;
+	font-family: $sans-serif;
+	background-image: url(../img/care-cake-sm.png);
+	background-repeat: no-repeat;
+	background-size: 145%;
+	background-position: center bottom;
+
+	&__title {
+		@include section-title;
+		margin: 0;
+	}
+
+	&__subtitle {
+		@include section-subtitle;
+		font-size: 1.2rem;
+		line-height: 1;
+		margin: 7px 0 3px;
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 0.9rem;
+		line-height: 1.2;
+	}
+
+	@media (min-width: 450px) {
+		& {
+			background-image: url(../img/care-bg-md.png);
+			background-size: 100%;
+			background-position: center 150px;
+			padding: 20px 20px 160px;
+
+			&__subtitle {
+				margin: 7px 0 10px;
+			}
+
+			&__text {
+				width: 100%;
+			}
+		}
+	}
+
+	@media (min-width: 640px) {
+		& {
+			background-image: none;
+			padding: 20px 45px 127px;
+
+			&__text {
+				width: 50%;
+			}
+		}
+
+	}
+
+	@media (min-width: 1128px) {
+		& {
+			@include section-padding(175px, 253px);
+			background-image: none;
+
+			&__subtitle {
+				font-size: 1.4rem;
+				margin: 20px 0 10px;
+			}
+
+			&__text {
+				width: 38%;
+			}
+		}
+
+	}
+}
