@@ -22,11 +22,7 @@ if (env==='development') {
   outputDir = 'builds/production/';
 }
 
-jsSources = [
-	'src/js/sliders.js',
-  'src/js/form.js',
-  'src/js/script.js'
-];
+jsSources = 'src/js/*.js';
 sassSources = ['src/sass/styles.scss', 'src/sass/blocks/*.scss', 'src/sass/utility/*.scss'];
 
 

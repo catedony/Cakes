@@ -8,9 +8,7 @@
 	@include sr-only;
 }
 &__list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	@include reset-list;
 }
 &__item {
 	margin-top: 15px;

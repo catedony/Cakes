@@ -11,9 +11,7 @@
 		box-sizing: border-box;
 	}
 	&__list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
+		@include reset-list;
 	}
 
 	&__card {
@@ -44,23 +42,8 @@
 														"d f f"
 														"e f f";
 		}
-		&__item-1 {
-			grid-area: a;
-		}
-		&__item-2 {
-			grid-area: b;
-		}
-		&__item-3 {
-			grid-area: c;
-		}
-		&__item-4 {
-			grid-area: d;
-		}
-		&__item-5 {
-			grid-area: e;
-		}
-		&__item-6 {
-			grid-area: f;
+		@each $n in a, b, c, d, e, f {
+			&__item-#{$n} { grid-area: $n }
 		}
 	}
 	@media (min-width: 1280px) {

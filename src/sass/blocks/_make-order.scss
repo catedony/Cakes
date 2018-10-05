@@ -19,9 +19,7 @@
 	}
 
 	&__list {
-		margin: 0;
-		padding: 0;
-		list-style: none;
+		@include reset-list;
 		font-size: 0.9rem;
 		font-family: $sans-serif;
 	}
