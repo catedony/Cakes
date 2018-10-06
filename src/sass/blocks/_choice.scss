@@ -5,7 +5,7 @@
 		text-align: left;
 		font-size: 1.4rem;
 		margin: 0;
-		padding: 0;
+		@include section-padding(0, 0);
 	}
 
 	&__subtitle {
@@ -44,6 +44,7 @@
 			&__title {
 				font-size: 1.1rem;
 				line-height: 1.2;
+				padding: 0;
 			}
 
 			&__form {

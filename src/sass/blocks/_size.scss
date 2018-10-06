@@ -12,14 +12,14 @@
 		border-radius: 50%;
 	}
 	
-	@each $size in '1kg', '2kg', '5kg', '8kg' {
-		&-#{$size}__img {background-image: url('../img/size-' + $size + '-sm.png');}
+	@each $size in '2kg', '5kg', '8kg' {
+		&-#{$size}__img {background-image: url('../img/size-' + $size + '-md.png');}
 	}
 
 	&-1kg__img {
 		width: 110px;
 		height: 110px;
-		// background-image: url(img/size-1kg-sm.png);
+		background-image: url(../img/size-1kg-sm.png);
 	}
 	&-2kg__img {
 		width: 107px;

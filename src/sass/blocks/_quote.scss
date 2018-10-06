@@ -1,6 +1,8 @@
 .quote {
  @include section-padding(0, 0);
-
+	&__title {
+		@include sr-only;
+	}
  &__text {
 	color: $dark-grey;
 	text-align: center;
