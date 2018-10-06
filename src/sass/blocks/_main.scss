@@ -1,0 +1,14 @@
+.main {
+	
+@media (min-width: 400px) {
+	&__reviews {
+		margin-top: -10px;
+	}
+}
+
+@media (min-width: 1024px) {
+	&__reviews {
+		margin-top: -3px;
+	}
+}
+}

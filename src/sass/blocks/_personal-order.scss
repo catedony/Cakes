@@ -1,0 +1,165 @@
+.personal-order {
+	background: $bg-pink;
+	text-align: center;
+	@include section-padding(0, 0);
+
+	&__title {
+		@include section-title;
+		margin: 0 auto;
+		padding-top: 35px;
+		width: 80%;
+		line-height: 1.25;
+	}
+	&__subtitle {
+		@include section-subtitle;
+	}
+	&__step {
+		background: white;
+		padding: 5px 18px;
+		margin-top: 10px;
+	}
+	&__step-title {
+		margin: 0 0 20px 0;
+		text-align: left;
+		font-family: $serif;
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 1;
+		color: $pink;
+	}
+	&__number {
+		font-size: 2rem;
+		margin-right: 12px;
+		line-height: 1;
+	}
+	&__btn {
+		padding: 17px 60px;
+	}
+	&__size-slider {
+		margin: 0 auto;
+	}
+
+	@media (min-width: 400px) {
+		& {
+			@include section-padding(20, 0);
+			&__step {
+				display: flex;
+				margin-top: 20px;
+				padding: 15px 20px;
+				box-shadow: 0 2px 10px -3px #b5b5b5;
+			}
+			&__step-title {
+				font-size: 1.1rem;
+				line-height: 1.2;
+				letter-spacing: 0.5px;
+				margin-right: 20px;
+			}
+			&__number {
+				display: block;
+				font-size: 2.2rem;
+			}
+
+			&__decor {
+				background-image: url(../img/decor-bg-md.png);
+				background-repeat: no-repeat;
+				background-position: left 70%;
+				margin-bottom: -10px;
+				padding-bottom: 40px;
+			}
+			&__decor-title {
+				line-height: 1.8;
+			}
+			&__decor-slider {
+				margin: 0 auto;
+			}
+		}
+	}
+	@media (min-width: 550px) {
+		&__size {
+			position: relative;
+		}
+		&__size-title {
+			position: absolute;
+			top: 15px;
+			left: 20px;
+		}
+	}
+
+	@media (min-width: 650px) {
+		&__size {
+			padding-left: 66px;
+			padding-right: 67px; 
+		}
+		&__size-title {
+			top: 35px;
+			left: 45px;
+		}
+
+		&__decor {
+			background-image: url(../img/decor-bg-md.png);
+			background-repeat: no-repeat;
+			background-position: left 70%;
+			margin-bottom: -10px;
+			padding-bottom: 40px;
+		}
+		&__decor-title {
+			line-height: 1.8;
+		}
+		&__decor-slider {
+			margin-left: 75px;
+		}
+	}
+
+	@media (min-width: 700px) {
+		&__step {
+			padding: 30px 45px;
+		}
+		&__step-title {
+			margin: 0;
+		}
+	}
+
+	@media (min-width: 882px) {
+		&__size-title {
+			position: static;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		&__size {
+			padding-left: 80px;
+			padding-right: 80px; 
+		}
+		&__step {
+			margin-top: 35px;
+			padding: 55px 80px;
+			box-shadow: 0 5px 20px -5px #edc7cf;
+		}
+		&__decor {
+			background-image: url(../img/decor-bg-lg.png);
+			background-repeat: no-repeat;
+			background-position: 2% bottom;
+		}
+		&__decor-title {
+			padding-right: 25px;
+			position: static;
+		}
+		&__decor-slider {
+			margin: 0;
+		}
+	}
+	@media (min-width: 1280px) {
+		&__step-title {
+			font-size: 1.2rem;
+		}
+		&__number {
+			font-size: 2.5rem;
+			margin-bottom: 5px;
+		}
+		&__size {
+			padding: 55px 180px 90px 80px;
+		}
+	}
+}
+
+

@@ -1,0 +1,55 @@
+.icon {
+	@include set-sprite;
+	&__natural-ban {
+		width: 33px;
+		height: 33px;
+		background-position: 0 -379px;
+	}
+	
+	&__delivery {
+		width: 33px;
+		height: 33px;
+		background-position: 0 -134px;
+	}
+
+		
+	&__natural-features {
+		background-position: 0 -170px; 
+		width: 61px; 
+		height: 61px;
+	}
+	&__fresh {
+		background-position: 0 -235px; 
+		width: 84px; 
+		height: 50px;
+	}
+	@media (min-width: 400px) {
+		& {
+			background-image: url(../img/sprite-m.png);
+		}
+
+		&__natural-ban {
+			background-position: 0 -203px; 
+			width: 55px; 
+			height: 55px;
+		}
+		
+		&__delivery {
+			background-position: 0 -144px; 
+			width: 55px; 
+			height: 55px;
+		}
+
+		&__natural-features {
+			background-position: 0 -92px; 
+			width: 48px; 
+			height: 48px;
+		}
+		&__fresh {
+			background-position: 0 -50px; 
+			width: 63px; 
+			height: 38px;
+		}
+	}
+}
+

@@ -1,0 +1,67 @@
+.catalog {
+	background-color: $bg-pink;
+	box-sizing: border-box;
+	@include section-padding(0, 0);
+
+	&__title {
+		@include section-title();
+		text-align: center;
+		padding: 0;
+		margin: 15px 0 20px;
+		box-sizing: border-box;
+	}
+	&__list {
+		@include reset-list;
+	}
+
+	&__card {
+		margin: 10px 0;
+	}
+
+	@media (min-width: 400px) {
+		&__title {
+			text-align: left;
+			margin: 22px 0 35px;
+		}
+		&__list {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(auto-fill, 1fr);
+		}
+		&__card {
+			margin: 0;
+		}
+	}
+	@media (min-width: 600px) {
+		&__list {
+			grid-template-columns: 5fr 2fr 5fr;
+			grid-template-rows: repeat(4, 24vw);
+			grid-template-areas: 	"a a b"
+														"a a c"
+														"d f f"
+														"e f f";
+		}
+		@each $n in a, b, c, d, e, f {
+			&__item-#{$n} { grid-area: $n }
+		}
+	}
+	@media (min-width: 1280px) {
+		& {
+			background: none;
+			padding-bottom: 35px;
+			&__title {
+				line-height: 1;
+				margin: 0 0 65px;
+			}
+			&__list {
+				grid-template-columns: 6fr 2fr 6fr;
+				grid-template-rows: repeat(4, 22vw);
+				grid-gap: 45px;
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,46 @@
+.reviews {
+	text-align: center;
+	font-family: $sans-serif;
+	font-size: 0.8rem;
+	letter-spacing: -0.3px;
+	color: $dark-grey;
+	@include section-padding(30px, 0);
+
+	&__title {
+		padding-top: 42px;
+		margin: 0 0 18px;
+		@include section-title;
+	}
+	@media (min-width: 400px) {
+		& {
+			font-size: 0.9rem;
+			letter-spacing: -0.5px;
+			background-image: url(../img/reviews-decor-md.png);
+			background-repeat: no-repeat;
+			background-position: center top;
+
+			&__title {
+				padding-top: 17px;
+			}
+		}
+
+	}
+
+	@media (min-width: 1024px) {
+		& {
+			font-size: 0.79rem;
+			letter-spacing: 0;
+			background-image: url(../img/reviews-decor-lg.png);
+			background-repeat: no-repeat;
+			background-position: center top;
+			padding-top: 85px;
+
+			&__title {
+				font-size: 1.75rem;
+				margin-bottom: 55px;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,153 @@
+.filling {
+	&__img {
+		width: 100%;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 0.95rem;
+		letter-spacing: 0.5px;
+		text-align: left;
+		margin: 15px 0 5px;
+	}
+	&__description {
+		font-size: 0.9rem;
+		line-height: 1.1;
+		text-align: left;
+		margin: 0;
+	}
+	&__price {
+		font-family: $serif;
+		font-weight: 700;
+		font-size: 1.1rem;
+		margin-top: 15px;
+	}
+	&__img-container {
+		position: relative;
+		display: inline-block;
+	}
+	&__counter {
+		font-family: $sans-serif;
+		font-size: 0.85rem;
+		letter-spacing: -1px;
+	}
+	&__counter_mobile {
+		color: white;
+		position: absolute;
+		z-index: 2;
+		bottom: 10px;
+		right: 10px;
+	}
+	&__counter_desktop {
+		display: none;
+	}
+	.filling__btn {
+		margin: 20px 0;
+	}
+
+	@media (min-width: 400px) {
+		&__img {
+			margin-top: 12px;
+		}
+	}
+
+	@media (min-width: 700px) {
+		& {
+			display: flex;
+			position: relative;
+			padding-bottom: 2px;
+
+			&__img-container {
+				flex-shrink: 0;
+				margin-left: 30px;
+				align-self: center;
+			}
+			&__text-container {
+				width: 35%;
+				padding: 27px 0;
+				margin-left: 27px;
+				text-align: left;
+			}
+			&__title {
+				font-size: 1.05rem;
+			}
+			&__description {
+				letter-spacing: -0.25px;
+				line-height: 1.1;
+			}
+			&__price {
+				font-size: 1.2rem;
+				margin: 8px 0 7px;
+			}
+			&__btn {
+				font-size: 0.75rem;
+				padding: 14px 41px;
+				margin: 20px 0;
+			}
+			&__counter_mobile {
+				display: none;
+			}
+			&__counter_desktop {
+				display: inline-block;
+				font-family: $sans-serif;
+				color: $mid-grey;
+				font-size: 0.8rem;
+				position: absolute;
+				bottom: 20px;
+				right: 25px;
+			}
+		}
+	}
+	
+	@media (min-width: 1024px) {
+		& {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 20px 20px 25px;
+			/* width: 70%; */
+
+			&__img-container {
+				margin-left: 20px;
+			}
+			&__text-container {
+				margin-left: 40px;
+				padding-top: 60px;
+				/* padding-bottom: 0; */
+			}
+		}
+		
+	}
+	@media (min-width: 1030px) {
+	
+		&__title {
+			font-size: 0.85rem;
+			margin: 0 0 4px 0;
+		}
+		&__description {
+			font-size: 0.8rem;
+			line-height: 1.4;
+		}
+		&__img-container {
+			flex-grow: 0;
+		}
+		&__price {
+			font-size: 1rem;
+			margin: 13px 0 30px;
+		}
+		&__btn {
+			font-size: 0.65rem;
+			padding: 16px 60px;
+			margin: 20px 0;
+		}
+	
+		&__counter_desktop {
+			display: inline-block;
+			font-family: $sans-serif;
+			color: $mid-grey;
+			font-size: 0.8rem;
+			position: absolute;
+			bottom: 30px;
+			right: 50px;
+		}
+	}
+}

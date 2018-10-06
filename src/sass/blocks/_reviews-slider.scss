@@ -1,0 +1,153 @@
+.reviews-slider {
+	position: relative;
+
+	&__window {
+		width: 85%;
+		margin: auto;
+		overflow-x: hidden;
+	}
+	&__list {
+		@include reset-list;
+		display: flex;
+	}
+	
+	&__item {
+	flex-shrink: 0;
+	 width: 100%;
+	 margin-bottom: 15px; 
+	 position: relative;
+	 transition: all 0.5s;
+	}
+	&__user-photo {
+		max-width: 100%;
+	}
+	&__user-name {
+		font-size: 0.9rem;
+		line-height: 1;
+		margin: 3px 0 0;
+	}
+	&__user-info {
+		margin-bottom: 7px;
+		line-height: 1;
+	}
+	&__review {
+		line-height: 0.1;
+	}
+	&__unfold-btn {
+		color: $pink;
+		font-family: $sans-serif;
+		font-size: 0.8rem;
+		font-style: italic;
+		background: none;
+		border: none;
+		text-decoration: underline;
+		padding: 0 2px;
+	}
+	&__counter {
+		color: $pink;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	&__points {
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+@media (min-width: 400px) {
+	& {
+		display: flex;
+		align-items: center;
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__img-container {
+			flex-shrink: 0;
+		}
+		&__user-photo {
+			width: 95%;
+			margin: 0 0 10px 5px;
+		}
+		&__text-container {
+			text-align: left;
+			margin-left: 25px;
+		}
+		&__user-name {
+			font-size: 1rem;
+			margin-bottom: 3px;
+		}
+		&__user-info {
+			margin-bottom: 10px;
+		}
+		&__unfold-btn {
+			font: inherit;
+			font-style: italic;
+		}
+		&__points {
+			display: none;
+		}
+		&__prev,
+		&__next {
+		display: block;
+		}
+		&__counter {
+		bottom: -15px;
+		right: 10px;
+	}
+	}
+}
+
+@media (min-width: 560px) {
+	&__item {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+}
+@media (min-width: 730px) {
+	&__window {
+		width: 55%;
+	}
+	&__text-container {
+		width: 60%;
+	}
+}
+@media (min-width: 1024px) {
+	&__window {
+		width: 70%;
+	}
+	&__item {
+		align-items: flex-start;
+	}
+	&__text-container {
+		width: 56%;
+	}
+	&__user-photo {
+		width: 97%;
+		margin: 0;
+	}
+	&__text-container {
+		margin-left: 50px;
+	}
+	&__user-name {
+		font-size: 1.2rem;
+		margin: 0 0 8px;
+	}
+	&__user-info {
+		margin-bottom: 20px;
+		font-size: 0.9rem;
+	}
+	&__review {
+		line-height: 1.4;
+	}
+}
+@media (min-width: 1280px) {
+	&__window {
+		width: 52%;
+	}
+}
+}
+

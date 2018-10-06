@@ -1,0 +1,66 @@
+@mixin sr-only {
+	clip-path: inset(100%);
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+@mixin set-sprite {
+	display: inline-block;
+	flex-shrink: 0;
+	vertical-align: middle;
+	background-image: url(../img/sprite-s.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+@mixin reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin section-title {
+	font-family: $serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: $dark-grey;
+	@media (min-width: 400px){
+		font-size: 1.7rem;
+	}
+	@media (min-width: 1024px){
+		font-size: 1.8rem;
+	}
+}
+
+@mixin section-subtitle {
+	font-family: $handwritting;
+	font-size: 1.3rem;
+	color: $dark-grey;
+	@media (min-width: 400px){
+		font-size: 1.5rem;
+	}
+	@media (min-width: 1024px){
+		font-size: 1.4rem;
+	}
+
+}
+
+@mixin section-padding($top, $bottom) {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: $top;
+	padding-bottom: $bottom;
+	@media (min-width: 1024px) {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	@media (min-width: 1280px) {
+		padding-left: 71px;
+		padding-right: 71px;
+	}
+}

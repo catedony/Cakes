@@ -1,0 +1,120 @@
+.size {
+	display: inline-block;
+
+	&__img {
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $dark-grey;
+		margin: 50px auto 45px;
+		border-radius: 50%;
+	}
+	
+	@each $size in '2kg', '5kg', '8kg' {
+		&-#{$size}__img {background-image: url('../img/size-' + $size + '-md.png');}
+	}
+
+	&-1kg__img {
+		width: 110px;
+		height: 110px;
+		background-image: url(../img/size-1kg-sm.png);
+	}
+	&-2kg__img {
+		width: 107px;
+		height: 107px;
+		// background-image: url(img/size-2kg-md.png);
+	}
+	&-5kg__img {
+		width: 120px;
+		height: 120px;
+		// background-image: url(img/size-5kg-md.png);
+		margin: 35px auto;
+	}
+	&-8kg__img {
+		width: 140px;
+		height: 140px;
+		// background-image: url(img/size-8kg-md.png);
+		margin: 30px auto;
+	}
+	
+	&__title {
+		font-weight: normal;
+		margin: 10px 0 0;
+		padding: 0;
+	}
+	&__description {
+		margin: 0 0 40px;
+		padding: 0;
+	}
+	&__btn {
+		margin: 20px 0;
+	}
+
+	@media (min-width: 550px) {
+		& {
+			width: auto;
+			text-align: left;
+			font-size: 0.8rem;
+			padding-bottom: 10px;
+
+			&__btn {
+				display: none;
+			}
+			&-2kg,
+			&-5kg,
+			&-8kg {
+				display: inline-block;
+			}
+			&__img {
+				margin-bottom: 16px;
+			}
+			&__img:hover {
+				box-shadow: 0 0 0 15px white,
+				0 2px 20px 8px #5b5b5b;
+			}
+			&-1kg__img {
+			width: 78px;
+			height: 78px;
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+
+		&__img {
+			margin: 80px auto 30px;
+		}
+
+		@each $size in '1kg', '2kg', '5kg', '8kg' {
+			&-#{$size}__img {background-image: url('../img/size-' + $size + '-lg.png');}
+		}
+
+		&-1kg__img {
+			width: 110px;
+			height: 110px;
+			// background-image: url(img/size-1kg-lg.png);
+			}
+			&-2kg__img {
+				width: 155px;
+				height: 155px;
+				// background-image: url(img/size-2kg-md.png);
+			}
+			&-5kg__img {
+				width: 174px;
+				height: 174px;
+				// background-image: url(img/size-5kg-md.png);
+			}
+			&-8kg__img {
+				width: 202px;
+				height: 202px;
+				// background-image: url(img/size-8kg-md.png);
+			}
+	}
+	@media (min-width: 1280px) {
+		.size__description {
+			line-height: 2;
+		}
+	}
+}

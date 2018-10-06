@@ -52,13 +52,11 @@ body {
 .title_sr-only {
 	clip-path: inset(100%);
 	clip: rect(1px 1px 1px 1px);
-	/* IE 6/7 */
 	clip: rect(1px, 1px, 1px, 1px);
 	height: 1px;
 	overflow: hidden;
 	position: absolute;
 	white-space: nowrap;
-	/* added line */
 	width: 1px;
 }
 
@@ -77,10 +75,6 @@ body {
 	font-family: var(--handwritting);
 	font-size: 1.3rem;
 	color: var(--dark-grey);
-}
-
-.card__title {
-	font-family: var(--sans-serif);
 }
 
 .btn {
@@ -145,8 +139,6 @@ body {
 		box-shadow: 0 2px 2px -1px #ddd;
 		cursor: pointer;
 		flex-shrink: 0;
-		/* position: absolute;
-		z-index: 5; */
 }
 .slider-btn:hover {
 	box-shadow: 0 2px 7px -2px #b5b5b5;
@@ -276,10 +268,6 @@ MODAL
 /*--------
 HEADER
 ----------*/
-.page__header {
-	position: relative;
-}
-
 .header {
 	width: 100%;
 	display: flex;
@@ -289,6 +277,7 @@ HEADER
 	height: 40px;
 	flex-shrink: 0;
 	padding: 12px var(--side-padding);
+	position: relative;
 }
 
 .header__logo {
@@ -735,6 +724,7 @@ CATALOG
 	line-height: 1;
 	font-weight: lighter;
 	color: var(--dark-grey);
+	font-family: var(--sans-serif);
 }
 
 .card__link {

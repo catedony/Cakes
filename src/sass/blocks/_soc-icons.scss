@@ -1,0 +1,15 @@
+.soc-icons {
+	&__list {
+		@include reset-list;
+	}
+	&__link {
+		@include set-sprite;
+	}
+
+	@media (min-width: 400px) {
+		&__item {
+			display: inline-block;
+		}
+	}
+}
+

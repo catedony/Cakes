@@ -1,0 +1,172 @@
+.about-us {
+	@include section-padding(41px, 0);
+	display: grid;
+	color: $dark-grey;
+	grid-template-columns: 60% 1fr;
+	grid-column-gap: 23px;
+	grid-template-areas: "title title"
+		"photo icons"
+		"info info";
+
+	&__title {
+		@include section-title();
+		text-align: center;
+		padding: 0;
+		margin: 0 0 20px;
+		grid-area: title;
+	}
+
+	&__subtitle {
+		@include section-subtitle();
+		line-height: 1;
+		margin: 15px 0 8px;
+	}
+
+	&__img-container {
+		grid-area: photo;
+	}
+
+	&__img {
+		margin: 1px 0 0 1px;
+		max-width: 100%;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 0.9rem;
+		font-family: $sans-serif;
+	}
+
+	&__subtitle-2 {
+		margin: 0 0 10px;
+		line-height: 1;
+		letter-spacing: 0.3px;
+	}
+
+	&__text {
+		margin: 0 0 15px;
+		line-height: 1.15;
+		letter-spacing: -0.15px;
+	}
+
+	&__soc-icons {
+		grid-area: icons;
+	}
+
+	&__info {
+		grid-area: info;
+	}
+
+	&__icon:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	&__inst {
+		background-position: 0 -339px;
+		width: 36px;
+		height: 36px;
+	}
+
+	&__vk {
+		background-position: 0 -456px;
+		width: 36px;
+		height: 36px;
+	}
+
+	&__tw {
+		background-position: 0 -416px;
+		width: 36px;
+		height: 36px;
+	}
+
+	&__text {
+		margin: 0 0 10px;
+	}
+
+	@media (min-width: 400px) {
+		& {
+			padding: 80px 20px 10px;
+			grid-template-columns: 100%;
+			grid-template-areas: "title"
+				"photo"
+				"info"
+				"icons";
+
+			&__title {
+				text-align: left;
+				margin: 10px 0 0;
+			}
+
+			&__subtitle {
+				margin: 5px 0 10px;
+			}
+
+			&__img-container {
+				margin: 0 auto;
+			}
+
+			&__img {
+				margin: 5px 0;
+				max-width: 100%;
+			}
+
+			&__icon:not(:last-child) {
+				margin: 10px 15px 0 0;
+			}
+
+			&__text {
+				margin: 0 0 10px;
+			}
+		}
+	}
+
+	@media (min-width: 730px) {
+		& {
+			padding: 132px 48px 0;
+			grid-template-columns: 49% 1fr;
+			grid-column-gap: 32px;
+			grid-template-areas: "title photo"
+				"info photo"
+				"icons photo";
+
+			&__icon:hover {
+				border-radius: 50%;
+				box-shadow: 0 1px 5px -2px $pink;
+			}
+		}
+	}
+
+	@media (min-width: 1280px) {
+		& {
+			@include section-padding(180px, 0);
+			grid-template-columns: 46% 1fr;
+			grid-template-rows: 95px auto 1fr;
+			grid-column-gap: 75px;
+
+			&__title {
+				margin: 20px 0 20px;
+			}
+
+			&__subtitle {
+				margin: 0 0 10px;
+			}
+
+			&__text {
+				font-size: 0.8rem;
+				line-height: 1.3;
+				margin: 0 0 22px;
+				letter-spacing: 0.1px;
+			}
+
+			&__img-container {
+				margin: 0;
+			}
+
+			&__icon:not(:last-child) {
+				margin: 0 11px 0 0;
+			}
+		}
+	}
+}

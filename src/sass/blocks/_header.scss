@@ -1,0 +1,79 @@
+.header {
+	@include section-padding(12px, 12px);
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	background: white;
+	justify-content: space-between;
+	height: 40px;
+	flex-shrink: 0;
+	position: relative;
+	&__logo {
+		margin: 0;
+		font-size: 1rem;
+	}
+	&__tel {
+		display: none;
+	}
+
+	&__menu {
+		position: absolute;
+		right: 0;
+		top: 40px;
+	}
+}
+
+@media (min-width: 400px) {
+	.header {
+		height: 62px;
+		box-shadow: 0 2px 5px -3px #ddd;
+		display: flex;
+		align-items: center;
+		padding: 0 46px;
+
+		&__logo {
+			font-size: 1.25rem;
+			line-height: 1.4;
+		}
+
+		&__tel {
+			display: block;
+			font-family: $sans-serif;
+			font-size: 1rem;
+			font-weight: 600;
+			line-height: 1;
+			margin-left: auto;
+		}
+		&__burger {
+			margin-left: 25px;
+		}
+		&__menu {
+			left: 0;
+			top: 62px;
+			}
+	}
+}
+
+@media (min-width: 1024px) {
+	.header {
+		@include section-padding(0, 0);
+		background: none;
+		height: 82px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		box-shadow: none;
+
+		&__logo {
+		font-size: 1.05rem;
+		line-height: 1;
+		margin-right: 45px;
+	}
+	&__tel {
+		font-size: 0.73rem;
+	}
+	&__menu {
+		position: static;
+	}
+	}
+}

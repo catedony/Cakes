@@ -1,0 +1,22 @@
+.btn {
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-family: $sans-serif;
+	padding: 17px 65px;
+	background-color: $pink;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	font-size: 0.65rem;
+	cursor: pointer;
+	max-width: 100%;
+}
+.btn:hover {
+	box-shadow: 0 5px 10px -5px $pink;
+}
+.btn:focus {
+	outline: 1px dotted $pink;
+}
+.btn:active {
+	box-shadow: inset 0 0 20px 0 #d10441;
+}

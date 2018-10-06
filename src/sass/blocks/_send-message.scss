@@ -1,0 +1,85 @@
+.send-message {
+	text-align: center;
+
+&__textarea,
+&__input {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: white;
+	border: none;
+	outline: none;
+	margin: 9px 0 0;
+	padding: 12px 10px;
+	font-family: $sans-serif;
+	font-size: 0.9rem;
+}
+
+&__textarea::-webkit-input-placeholder,
+&__input::-webkit-input-placeholder {
+	color: $mid-grey; 
+	opacity:0.3;
+}
+&__textarea::-moz-placeholder, 
+&__input::-moz-placeholder          {
+	color: $mid-grey; 
+	opacity:0.3;
+}/* Firefox 19+ */
+&__textarea:-moz-placeholder, 
+&__input:-moz-placeholder           {
+	color: $mid-grey; 
+	opacity:0.3;
+}/* Firefox 18- */
+&__textarea:-ms-input-placeholder,
+&__input:-ms-input-placeholder      {
+	color: $mid-grey; 
+	opacity:0.3;
+}/* IE */
+
+&__input {
+	height: 50px;
+}
+&__textarea {
+	resize: none;
+}
+&__btn {
+	margin: 25px 0 20px;
+	font-family: $sans-serif;
+	font-size: 1.2rem;
+	line-height: 1;
+	text-transform: capitalize;
+	padding: 16px 45px;
+}	
+
+@media (min-width: 470px) {
+	& {
+		text-align: left;
+
+		&__btn {
+		margin: 37px 0 7px;
+		font-size: 0.9rem;
+		padding: 14px 45px;
+	}		
+	}
+
+}
+@media (min-width: 1024px) {
+	&__input,
+	&__textarea {
+		background: none;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px solid #c1b0af;
+		font-size: 0.65rem;
+		height: 40px;
+		padding: 10px 5px;
+		margin: 25px 0 0;
+	}
+	&__btn {
+		margin: 67px 0 7px;
+		font-size: 0.9rem;
+		padding: 16px 44px;
+	}
+}
+}
+

@@ -1,0 +1,22 @@
+.features-care {
+@media (min-width: 640px) {
+	& {
+		background-image: url(../img/features-bg-md.png), url(../img/care-bg-md.png);
+		background-repeat: no-repeat;
+		background-position: left top, 150% bottom;
+	}
+}
+
+@media (min-width: 710px) {
+	& {
+		background-image: url(../img/features-bg-md.png), url(../img/care-bg-md.png);
+		background-repeat: no-repeat;
+		background-position: left top, right bottom;
+	}
+}
+@media (min-width: 1128px) {
+	& {
+		background-image: url(../img/features-bg-lg.png), url(../img/care-bg-lg.png);
+	}
+}
+}

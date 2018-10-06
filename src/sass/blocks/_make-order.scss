@@ -1,0 +1,91 @@
+.make-order {
+	background-color: #e3353d;
+	color: white;
+	padding: 28px 27px 127px;
+	background-image: url(../img/order-delivery-sm.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+
+	&__title {
+		@include section-title;
+		margin: 0 0 30px;
+		color: white;
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: 0.9rem;
+		margin: 0 0 5px;
+	}
+
+	&__list {
+		@include reset-list;
+		font-size: 0.9rem;
+		font-family: $sans-serif;
+	}
+
+	&__item {
+		padding-left: 40px;
+		position: relative;
+	}
+
+	&__item::before {
+		display: inline-block;
+		font-size: 2.2rem;
+		line-height: 0.4;
+		font-family: $serif;
+		font-weight: 700;
+		position: absolute;
+		top: 0;
+		left: 10px;
+	}
+
+	@each $n in '1', '2', '3' {
+		&__item-#{$n}::before {
+			content: $n;
+		}
+	}
+
+	&__text {
+		margin: 0 0 23px;
+		line-height: 1.1;
+	}
+
+	@media (min-width: 618px) {
+		& {
+			padding: 45px 60px 76px 41.5%;
+			background-image: url(../img/order-delivery-md.png);
+			background-size: cover;
+
+			&__title {
+				text-align: left;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		& {
+			padding: 110px 50px 152px 60.5%;
+			background-image: url(../img/order-delivery-lg.png);
+			background-size: cover;
+
+			&__title {
+				margin: 0 0 36px;
+			}
+
+			&__item::before {
+				display: inline-block;
+				font-size: 2.6rem;
+				top: 5px;
+				left: 0;
+			}
+
+			&__text {
+				margin: 0 0 30px;
+				line-height: 1.2;
+			}
+		}
+
+	}
+}
