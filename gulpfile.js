@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	cleanCSS = require('gulp-clean-css'),
 	autoprefixer = require('gulp-autoprefixer'),
-	butternut = require('gulp-butternut'),
+	uglify = require('gulp-uglify'),
 	babel = require('gulp-babel');
 var env,
 	jsSources,
@@ -18,9 +18,9 @@ var env,
 env = process.env.NODE_ENV || 'development';
 
 if (env==='development') {
-	outputDir = 'builds/development/';
+	outputDir = 'development/';
 } else {
-	outputDir = 'builds/production/';
+	outputDir = 'docs/';
 }
 
 jsSources = 'src/js/*.js';
@@ -31,9 +31,9 @@ gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
 		.pipe(gulpif(env === 'production', babel({
-			presets: ['es2015']
+			presets: ['env']
 		})))
-		.pipe(gulpif(env === 'production', butternut()))
+		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(gulp.dest(outputDir + 'js'))
 		.pipe(connect.reload());
 });
@@ -53,8 +53,8 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
 	gulp.watch(jsSources, ['js']);
 	gulp.watch(sassSources, ['sass']);
-	gulp.watch('builds/development/*.html', ['html']);
-	gulp.watch('builds/development/images/**/*.*', ['images']);
+	gulp.watch('development/*.html', ['html']);
+	gulp.watch('development/images/**/*.*', ['images']);
 });
 
 gulp.task('connect', function() {
@@ -65,14 +65,14 @@ gulp.task('connect', function() {
 });
 
 gulp.task('html', function() {
-	gulp.src('builds/development/*.html')
+	gulp.src('development/*.html')
 		.pipe(gulpif(env === 'production', minifyHTML()))
 		.pipe(gulpif(env === 'production', gulp.dest(outputDir)))
 		.pipe(connect.reload());
 });
 
 gulp.task('images', function() {
-	gulp.src('builds/development/img/**/*.*')
+	gulp.src('development/img/**/*.*')
 		.pipe(gulpif(env === 'production', imagemin({
 			progressive: true,
 			svgoPlugins: [{ removeViewBox: false }],
@@ -81,6 +81,5 @@ gulp.task('images', function() {
 		.pipe(gulpif(env === 'production', gulp.dest(outputDir + 'img')))
 		.pipe(connect.reload());
 });
-
 
 gulp.task('default', ['html', 'js', 'sass', 'images', 'connect', 'watch']);
